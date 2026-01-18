@@ -1,0 +1,29 @@
+[project]
+name = "app"
+version = "0.1.0"
+description = "Python backend exposing sync and async APIs with callback delivery"
+requires-python = ">=3.11"
+
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "sqlalchemy",
+    "httpx",
+    "pydantic",
+    "pydantic-settings",
+    "anyio",
+    "aiomysql",
+    "greenlet",
+    "apscheduler",
+    "cryptography",
+    "alembic"
+]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["app*"]
+exclude = ["alembic*"]
+

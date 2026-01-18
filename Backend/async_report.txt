@@ -1,0 +1,10 @@
+ASYNC LOAD TEST REPORT
+=====================
+
+Total Requests Sent: 500
+Accepted (2xx/3xx): 500
+Failed: 0
+
+NOTE:
+Time-to-callback is not measurable client-side when using a generic callback URL.
+It can be viewed from UI for each request from Request Details by Mode providing async as input.
